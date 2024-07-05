@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "SatinAl";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <form action="@Url.Action("SatinAl","Home")" method="post">
+
+        <input type="hidden" name="urun_id" value="@ViewBag.urun_id" />
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Adınız:</label>
+            <input type="text" id="disabledTextInput" name="alici_ad" class="form-control" placeholder="Ad">
+        </div>
+
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Adress:</label>
+            <textarea rows="5" type="text" id="disabledTextInput" name="adress" class="form-control" placeholder="adress"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Tel:</label>
+            <input type="text" id="disabledTextInput" name="tel" class="form-control" placeholder="0500..">
+        </div>
+
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Kart Numarası:</label>
+            <input type="text" id="disabledTextInput" name="kart_numara" class="form-control" placeholder="111111111">
+        </div>
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Mail:</label>
+            <input type="email" id="disabledTextInput" name="son_tarih" class="form-control" placeholder="..mail.com">
+        </div>
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Kart Geçerlilik Tarihi:</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="00/00">
+        </div>
+
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">CVV:</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="000">
+        </div>
+        <button type="submit" class="btn btn-primary">Satın Al</button>
+
+    </form>
+</div>
+
